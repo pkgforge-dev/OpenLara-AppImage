@@ -1,0 +1,3 @@
+dir=${XDG_CONFIG_HOME:-~/.openlara}
+mkdir -p "$dir"
+cd "$dir"
