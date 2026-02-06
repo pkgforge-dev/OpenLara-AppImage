@@ -2,7 +2,7 @@
 Type=Application
 Name=OpenLara
 Comment=Classic Tomb Raider open-source engine
-Exec=OpenLara
-Icon=OpenLara
+Exec=openlara
+Icon=icon0
 Terminal=false
 Categories=Game;Action;Adventure
