@@ -18,7 +18,8 @@ get-debloated-pkgs --add-common --prefer-nano
 if [ "$ARCH" = "x86_64" ]; then
     make-aur-package openlara-git
 else
-    PRE_BUILD_CMDS='sed -i "\|strip ../../../bin/OpenLara|d" openlara-git/src/platform/nix/build.sh' make-aur-package openlara-git
+    #PRE_BUILD_CMDS='sed -i "\|strip ../../../bin/OpenLara|d" openlara-git/src/platform/nix/build.sh' make-aur-package openlara-git
+    PRE_BUILD_CMDS='cd openlara-git && ls' make-aur-package openlara-git
 fi
 
 # If the application needs to be manually built that has to be done down here
