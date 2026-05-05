@@ -27,5 +27,5 @@ echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin
 cd ./OpenLara/src/platform/sdl3
-make-j$(nproc)
+make -j$(nproc)
 mv -v openlara ../../../../AppDir/bin
