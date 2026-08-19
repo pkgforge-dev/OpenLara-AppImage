@@ -14,7 +14,7 @@ echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
 get-debloated-pkgs --add-common --prefer-nano
 
-echo "Making nightly build of OpenLara..."
+echo "Building OpenLara..."
 echo "---------------------------------------------------------------"
 REPO="https://github.com/XProger/OpenLara"
 VERSION="$(git ls-remote "$REPO" HEAD | cut -c 1-9 | head -1)"
