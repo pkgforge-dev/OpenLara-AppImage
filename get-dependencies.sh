@@ -16,7 +16,7 @@ echo "Building OpenLara..."
 echo "---------------------------------------------------------------"
 REPO="https://github.com/XProger/OpenLara"
 VERSION="$(git ls-remote "$REPO" HEAD | cut -c 1-9 | head -1)"
-git clone "$REPO" ./OpenLara
+git clone --depth 1 "$REPO" ./OpenLara
 echo "$VERSION" > ~/version
 
 mkdir -p ./AppDir/bin
